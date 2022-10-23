@@ -1,0 +1,62 @@
+body {
+    background-color: #cccccc;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.console {
+    width: 300px;
+    height: 220px;
+    background-color: rgb(144, 211, 238);
+    text-align: center;
+    margin: 0 0 0 20px;
+}
+
+.inputTexto {
+    width: 200px;
+    padding: 10px;
+}
+
+.dados {
+    margin: 15px 0 0 0;
+}
+
+.imagem {
+    margin: 111px 0 0 7px;
+    width: 279px;
+    text-align: center;
+    height: 210px;
+}
+
+#poster {
+    display: flex;
+    background-image: url(images/wantedPoster.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 339px;
+    height: 500px;
+    word-break: break-all;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nome {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+}
+
+#recompensa {
+    font-size: 32px;
+    margin: -23px 0 0 0;
+    text-align: center;
+}

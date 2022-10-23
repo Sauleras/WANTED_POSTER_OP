@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartaz de Procurado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div id="poster">
+            <div class="imagem"><img src="" id="foto"></div>
+            <div class="dados">
+                <p id="nome">.</p>
+                <p id="recompensa">.</p>
+            </div>
+        </div>
+
+        <div class="console">
+            <br><br>
+            <input type="text" id="inputNome" placeholder="Nome" class="inputTexto" maxlength="11">
+            <br><br>
+            <input type="text" id="inputRec" placeholder="Recompensa" class="inputTexto" onkeypress="$(this).mask('0,###.###.###', {reverse: true});">
+            <br><br>
+            <input type="file" id="inputFile"><br><br>
+            <button onclick="gerarPdf()">Gerar Pdf</button>
+        </div>
+    </div>
+
+    <div id="screenshot" style="width: 300px; display: none;"></div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
